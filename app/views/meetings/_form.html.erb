@@ -21,6 +21,26 @@
     <%= form.datetime_select :start_time %>
   </div>
 
+  <div class="field">
+    <%= form.label :end_time %>
+    <%= form.datetime_select :end_time %>
+  </div>
+  
+  <div class="field">
+    <%= form.label :start_page %>
+    <%= form.text_field :start_page %>
+  </div>
+  
+  <div class="field">
+    <%= form.label :end_page %>
+    <%= form.text_field :end_page %>
+  </div>
+
+  <div class="field">
+    <%= form.label :content %>
+    <%= form.text_field :content %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

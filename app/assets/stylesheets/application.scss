@@ -23,3 +23,21 @@ body {
   background-size: cover;
   color: white;
 }
+
+.simple-calendar {
+  th {
+    padding: 10px;
+    background-color: #64F9C1;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  td {
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .day {
+    color: black;
+    background-color: #FFFFE2;
+  }
+  .today {
+    background-color: #C2E9E3;
+  }
+}

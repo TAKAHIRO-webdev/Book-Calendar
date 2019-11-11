@@ -10,5 +10,23 @@
   <%= @meeting.start_time %>
 </p>
 
+<p>
+  <strong>End time:</strong>
+  <%= @meeting.end_time %>
+</p>
+
+<p>
+  <strong>Page</strong>
+  <%= @meeting.start_page %>
+  ～
+  <%= @meeting.end_page %>
+</p>
+
+<p>
+  <strong>Content</strong>
+  <%= @meeting.content %>
+</p>
+
+
 <%= link_to 'Edit', edit_meeting_path(@meeting) %> |
 <%= link_to 'Back', meetings_path %>
