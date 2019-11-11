@@ -14,3 +14,12 @@
  *= require_tree .
  *= require_self
  */
+
+body { 
+  background-image: image-url('tosyokan.jpg'); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}

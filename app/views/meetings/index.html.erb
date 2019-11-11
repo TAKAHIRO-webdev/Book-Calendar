@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+
 <h1>Meetings</h1>
 
 <table>
@@ -36,5 +37,12 @@
 <% end %>
 
 <br>
+
+
+<%= week_calendar number_of_weeks: 1 do |date| %>
+  <%= date %>
+<% end %>
+
+
 
 <%= link_to 'New Meeting', new_meeting_path %>
