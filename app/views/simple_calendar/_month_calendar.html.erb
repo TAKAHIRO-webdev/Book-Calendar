@@ -1,10 +1,15 @@
 <div class="simple-calendar">
-  <div class="calendar-heading">
-    <%= link_to t('simple_calendar.previous', default: 'Previous'), calendar.url_for_previous_view %>
-    <span class="calendar-title"><%= t('date.month_names')[start_date.month] %> <%= start_date.year %></span>
-    <%= link_to t('simple_calendar.next', default: 'Next'), calendar.url_for_next_view %>
+    <div class="calendar-heading">
+      <div class="d-flex justify-content-around">
+      <%= link_to calendar.url_for_previous_view do %>
+         <div><i class="fas fa-angle-left fa-3x"></i></div>
+      <% end %>
+      <div><span class="calendar-title"><%= t('date.month_names')[start_date.month] %> <%= start_date.year %></span></div>
+      <%= link_to calendar.url_for_next_view do %>
+         <div><i class="fas fa-angle-right fa-3x"></i></div>
+      <% end %>
+    </div>
   </div>
-
   <table class="table table-striped">
     <thead>
       <tr>
