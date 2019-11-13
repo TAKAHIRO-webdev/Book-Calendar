@@ -35,4 +35,23 @@ class MeetingTest < ActiveSupport::TestCase
     @meeting.end_page  = "     "
     assert_not @meeting.valid?
   end
+
+  test "start_page should be integer" do
+    assert @meeting.valid?
+  end
+
+  test "start_page should not be string" do
+    @meeting.start_page  = "ten"
+    assert_not @meeting.valid?
+  end
+
+  test "end_page should be integer" do
+    assert @meeting.valid?
+  end
+
+  test "end_page should not be string" do
+    @meeting.start_page  = "ten"
+    assert_not @meeting.valid?
+  end
+
 end
