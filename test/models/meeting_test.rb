@@ -15,5 +15,9 @@ class MeetingTest < ActiveSupport::TestCase
   test "should be valid" do
     assert @meeting.valid?
   end
-  
+
+  test "name should be present" do
+    @meeting.name = "     "
+    assert_not @meeting.valid?
+  end
 end
