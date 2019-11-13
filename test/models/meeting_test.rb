@@ -5,7 +5,7 @@ class MeetingTest < ActiveSupport::TestCase
     @meeting = Meeting.new(
                            name: "I am a Cat", 
                            start_time: "2019-11-13 07:31:00",
-                           end_time: "user@example.com",
+                           end_time: "2019-11-13 07:32:00",
                            start_page: 10,
                            end_page: 20,
                            content: "I AM A CAT. As yet I have no name. I've no idea where I was born."
