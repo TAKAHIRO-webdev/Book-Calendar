@@ -1,5 +1,6 @@
 class MeetingsController < ApplicationController
   before_action :set_meeting, only: [:show, :edit, :update, :destroy]
+  before_action :set_twitter_client, only: [:show]
 
   # GET /meetings
   # GET /meetings.json
@@ -20,7 +21,7 @@ class MeetingsController < ApplicationController
   # GET /meetings/1/edit
   def edit
   end
-
+ 
   # POST /meetings
   # POST /meetings.json
   def create
@@ -70,5 +71,14 @@ class MeetingsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def meeting_params
       params.require(:meeting).permit(:name, :start_time, :end_time, :content, :start_page, :end_page)
+    end
+    
+    def set_twitter_client
+      @client = Twitter::REST::Client.new do |config|
+        config.consumer_key        = Rails.application.credentials.twitter[:consumer_key]
+        config.consumer_secret     = Rails.application.credentials.twitter[:consumer_secret]
+        config.access_token        = Rails.application.credentials.twitter[:access_token]
+        config.access_token_secret = Rails.application.credentials.twitter[:access_token_secret]
+      end
     end
 end
