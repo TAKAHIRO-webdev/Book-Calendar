@@ -54,4 +54,14 @@ class MeetingTest < ActiveSupport::TestCase
     assert_not @meeting.valid?
   end
 
+  test "name should not be too long" do
+    @meeting.name = "a" * 51
+    assert_not @meeting.valid?
+  end
+  
+  test "content should not be too long" do
+    @meeting.content = "a" * 255
+    assert_not @meeting.valid?
+  end
+
 end
