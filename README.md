@@ -1,25 +1,47 @@
-# README
+# 読書記録カレンダー
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+■ペルソナ
+```
+名前：SHOGO KAWASHIMA
+年齢：25～35歳
+職業：エンジニア
+職業概要：
+プロダクト開発をしている。
+趣味は読書で技術書を読み傍らで、
+SFの小説や新書を好んで読む。
+自らの読書の経験を通じて、
+社内でのコミュニケーションの強化や、
+問題解決に役に立つ方法はないかと考えているが、
+読んだ本や読んだ本の内容を活かしきれていないと考えている。
+読書記録をつけるためにTwitterやBlogや読書日記をやってみるが面倒な処理が多く続かない。
+Google CalendarやGmailなどのシンプルなアプリを好み、多機能性より早さを求める。
+```
 
-Things you may want to cover:
+☆上記のような人のためにアプリを作成する
 
-* Ruby version
+■どんなアプリか？
+・読書好きがストレスなく読書記録の管理ができる
+・役に立ちそうな本を教えてくれる
+・読んだ本の内容を簡単に検索・確認できる
+・読書記録をＳＮＳなどで簡単に共有できる
+・無駄な機能がなくシンプルな読書好きに特化したアプリ
 
-* System dependencies
+■必要な機能
+- 読書記録機能
+-- 読書のカテゴリ(SF/文学/技術書etc)
+-- 作品名
+-- 著者名
+-- ページ数(一か月何ページ読んだか合計できる機能)
+-- 読書時間(一か月何時間読んだか合計できる機能)
+-- 読書の内容
+-- 読書の場所
 
-* Configuration
+- 共有機能
+-- Twitter連携
+-- 読書内容を共有できる機能(メールアドレスで招待する)
 
-* Database creation
+- 検索機能
+-- 作品名で検索できる
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# Book-Calendar
+- レコメンド機能
+-- twitterのハッシュタグや書店のHPからAPIで発売日など取得できればそれを反映したい
