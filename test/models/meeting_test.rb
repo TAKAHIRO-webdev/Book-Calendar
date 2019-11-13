@@ -20,4 +20,19 @@ class MeetingTest < ActiveSupport::TestCase
     @meeting.name = "     "
     assert_not @meeting.valid?
   end
+  
+  test "start_page should be present" do
+    @meeting.start_page  = "     "
+    assert_not @meeting.valid?
+  end
+  
+  test "end_page should be present" do
+    @meeting.end_page  = "     "
+    assert_not @meeting.valid?
+  end
+  
+  test "content should be present" do
+    @meeting.end_page  = "     "
+    assert_not @meeting.valid?
+  end
 end
