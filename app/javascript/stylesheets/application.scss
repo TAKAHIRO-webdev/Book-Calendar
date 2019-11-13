@@ -104,3 +104,27 @@
 .read-title {
   font-family: 'Pacifico', cursive;
 }
+
+.calendar-record {
+  background: linear-gradient(transparent 60%, #ff99cc 0%);
+  
+    a {
+      color: #222222;
+      font-weight: bold;
+    }
+  
+}
+
+.card-header {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.card-body {
+  padding-top: 3px;
+}
+
+.card-text {
+  padding: 0px 25px 25px 25px;
+  font-size: 20px;
+}

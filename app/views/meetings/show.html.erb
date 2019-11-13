@@ -1,32 +1,24 @@
-<p id="notice"><%= notice %></p>
+<div class="mx-auto" style="width: 800px; padding-top: 10px;">
+  <p id="notice"><%= notice %></p>
+
+<div class="card border-primary mb-3" style="max-width: 1000px; max-hight: 1000px;">
+    <div class="card-header">
+      <%= @meeting.name %>
+      <%= link_to edit_meeting_path(@meeting), :class =>"btn btn-default btn-lg" do %>
+        <i class="fas fa-edit"></i>
+      <% end %>
+    </div>
+  <div class="card-body text-default">
+    <h4 class="card-title">
+      <div class="read-title">
+        <%= @meeting.start_page %>ページ ～ <%= @meeting.end_page %>ページ</h4>
+      </div>
+    <p class="card-text"><%= @meeting.content %></p>
+  </div>
+</div>
 
 <p>
-  <strong>Name:</strong>
-  <%= @meeting.name %>
+  <% @meeting.start_time  %>
 </p>
-
-<p>
-  <strong>Start time:</strong>
-  <%= @meeting.start_time %>
-</p>
-
-<p>
-  <strong>End time:</strong>
-  <%= @meeting.end_time %>
-</p>
-
-<p>
-  <strong>Page</strong>
-  <%= @meeting.start_page %>
-  ～
-  <%= @meeting.end_page %>
-</p>
-
-<p>
-  <strong>Content</strong>
-  <%= @meeting.content %>
-</p>
-
-
-<%= link_to 'Edit', edit_meeting_path(@meeting) %> |
-<%= link_to 'Back', meetings_path %>
+  
+  
