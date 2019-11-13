@@ -7,18 +7,18 @@
     </tr>
   </thead>
 
-<!--  <tbody>-->
-<!--    <% @meetings.each do |meeting| %>-->
-<!--      <tr>-->
-<!--        <td><%= link_to meeting.name, edit_meeting_path(meeting) %></td>-->
-<!--        <td><%= meeting.start_time %></td>-->
-<!--        <td><%= link_to 'Show', meeting %></td>-->
-<!--        <td><%= link_to 'Edit', edit_meeting_path(meeting) %></td>-->
-<!--        <td><%= link_to 'Destroy', meeting, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
-<!--      </tr>-->
-<!--    <% end %>-->
-<!--  </tbody>-->
-<!--</table>-->
+  <tbody>
+    <% @meetings.each do |meeting| %>
+      <tr>
+        <td><%= link_to meeting.name, edit_meeting_path(meeting) %></td>
+        <td><%= meeting.start_time %></td>
+        <td><%= link_to 'Show', meeting %></td>
+        <td><%= link_to 'Edit', edit_meeting_path(meeting) %></td>
+        <td><%= link_to 'Destroy', meeting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
 
 <div class="container">
   <%= month_calendar events: @meetings do |date, meetings| %>
